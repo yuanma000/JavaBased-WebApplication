@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chi-Car-Go!</title>
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+<!-- jqurey script -->
+$(document).ready(function(){
+
+  $('#myCarousel').carousel({
+  interval: 3000
+})
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+});
+});
+</script>
+<script type="text/javascript" src="javascript.js"></script>
+<style>
+<!-- * { -->
+    <!-- box-sizing : unset; -->
+  <!-- } -->
+  
+.col-md-6{
+    width : 45% ! important;
+  }
+</style>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> -->
+          <!-- <span class="sr-only">Toggle navigation</span> -->
+          <!-- <span class="icon-bar"></span> -->
+          <!-- <span class="icon-bar"></span> -->
+          <!-- <span class="icon-bar"></span> -->
+        <!-- </button> -->
+        <a class="navbar-brand" href="Home">Chi-Car-Go</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+        	<!-- <li><a href="Home">Home</a></li> -->
+			<li><a href="Home">Rent A Car</a></li>
+			
+			<!-- Share Your Car Link -->
+			<li><a href="ShareCar">Share Your Car</a></li>
+			
+			<!-- Locations Link -->
+        	<li><a href="ViewLocations">Locations</a></li>
+			
+			<li><a href="MachedAutoNews">Matched AutoNews</a></li>
+			
+			<li><a href="TopRatedCar">Top Rated Car</a></li>
+			
+			<!-- <li><a href="MostRentedCar">Most Rented Car</a></li> -->
+			
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right"> -->
+          <!-- <li><a href="Registration">Sign Up <i class="fa fa-user-plus"></i></a></li> -->
+          <!-- <li><a href="Login">Login <i class="fa fa-user"></i></a></li> -->
+          <!-- 5.21 -->
+        <!-- </ul> -->
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+</head>
+<body onload="init()">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">"></script>
+<script type="text/javascript" src="javascript.js"></script>
+<script type="text/javascript" src="autocomplete.js"></script>

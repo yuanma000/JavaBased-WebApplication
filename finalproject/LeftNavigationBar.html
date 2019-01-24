@@ -1,0 +1,88 @@
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/js/gijgo.min.js" type="text/javascript"></script>
+<link href="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+<div id = "sidebar" class="sidenav">
+  <ul>
+  <form action="/finalproject/Home">
+    <li>
+        <h2>Pick-up Date</h2>
+        <div class="form-group">
+            <div class='input-group date'>
+                <input type='text' class="form-control" id="pickupdatepicker" name="pickupdate" placeholder="Pick-up">
+                <!-- <span class="input-group-addon"> -->
+                    <!-- <span class="glyphicon glyphicon-calendar"></span> -->
+                <!-- </span> -->
+            </div>
+			<script type="text/javascript">
+            $(document).ready(function () {
+				$('#pickupdatepicker').datepicker({
+					uiLibrary: 'bootstrap'
+				});
+			});
+			</script>
+        </div>
+    </li>
+    <li>
+      <h2>Drop-off Date</h2>
+      <div class="form-group">
+			  <div class='input-group date'>
+				  <input type='text' class="form-control" id="dropoffdatepicker"  name="dropoffdate" placeholder="Drop-off">
+				  <!-- <span class="input-group-addon"> -->
+					  <!-- <span class="glyphicon glyphicon-calendar"></span> -->
+				  <!-- </span> -->
+			  </div>
+			<script type="text/javascript">
+            $(document).ready(function () {
+				$('#dropoffdatepicker').datepicker({
+					uiLibrary: 'bootstrap'
+				});
+			});
+			</script>
+      </div>
+    </li>
+    <li>
+		<h2>Pick-up Location</h2>
+		<div class="form-group">
+			<select class="form-control" name="pickuplocation">
+				<option>Select a location</option>
+				<option>Chicago - IIT Campus</option>
+				<option>Chicago - ORD Airport</option>
+				<option>Evanston - Northwestern Campus</option>
+				<option>Champaign - UIUC Campus</option>
+				<option>St. Louis - Enterprise Center</option>
+				<option>Madison - Kohl Center</option>
+				<option>Indianapolis - Hyatt Regency</option>
+			</select>
+		</div>
+    </li>
+    <li>
+      <h2>Drop-off Location</h2>
+		<div class="form-group">
+			<select class="form-control" name="dropofflocation">
+				<option>Same as pick up</option>
+				<option>Chicago - IIT Campus</option>
+				<option>Chicago - ORD Airport</option>
+				<option>Evanston - Northwestern Campus</option>
+				<option>Champaign - UIUC Campus</option>
+				<option>St. Louis - Enterprise Center</option>
+				<option>Madison - Kohl Center</option>
+				<option>Indianapolis - Hyatt Regency</option>
+			</select>
+		</div>
+    </li>
+	
+	<!-- Search car function add here -->
+	<input type="submit" formaction="/finalproject/SearchCar" class="btn btn-success" style="width: 220px" value="Find Your Deal">
+    <!-- <button type="button" class="btn btn-success" style="width: 220px">Find Your Deal</button> -->
+	</form>
+	
+  </ul>
+</div>
+

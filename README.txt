@@ -50,4 +50,4 @@
 		Deal Match Guarantees (Implemented)
 			(Implemented as matched Automotive News)
 		Recommender feature (Implemented)
-			(Implemented as recommending the same car type with higher cost, max number of recommendations is set to 3)
+			(Implemented as recommending the same type of car, max number of recommendations is set to 3)

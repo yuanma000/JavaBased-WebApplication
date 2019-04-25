@@ -160,50 +160,7 @@ public class AddCar extends HttpServlet {
 		
 		
 		}
-		// if(request.getParameter("AddCar")!=null && request.getParameter("AddCar").equals("Update Car"))
-		// {
-		// 	// System.out.println("I am in");
-		// 	if(request.getParameter("brand")!=null &&request.getParameter("itemId")!=null&& request.getParameter("itemName")!=null && request.getParameter("itemPrice")!=null 
-		// 	&& request.getParameter("itemCondition")!=null && request.getParameter("cartype")!=null && request.getParameter("location")!=null
-		// 	&& request.getParameter("itemDiscount")!=null && request.getParameter("itemOwner")!=null && request.getParameter("start")!=null && request.getParameter("end")!=null)
-		// 	{
-		// 		String brand = request.getParameter("brand");
-		// 		String id = request.getParameter("itemId");
-		// 		String name = request.getParameter("itemName");
-		// 		double price = 0.0;
-		// 		price = Double.parseDouble( request.getParameter("itemPrice"));
-
-		// 		//NEW NEW NEW
-		// 		String image = request.getParameter("itemImage");
-		// 		// InputStream image = null;
-		// 		// Part filePart = request.getPart("itemImage");
-		// 		// image = filePart.getInputStream();
-		// 		//NEW NEW NEW
-		// 		String condition = request.getParameter("itemCondition");
-		// 		String cartype = request.getParameter("cartype");
-		// 		String location = request.getParameter("location").toString();
-		// 		int start = Integer.parseInt(request.getParameter("start"));
-		// 		int end = Integer.parseInt(request.getParameter("end"));
-		// 		String owner = request.getParameter("itemOwner");
-		// 		double discount = 0.0;
-		// 		discount = Double.parseDouble( request.getParameter("itemDiscount"));
-		// 		MySqlDataStoreUtilities.deleteCar(id);
-		// 		MySqlDataStoreUtilities.deleteTime(id);
-		// 		MySqlDataStoreUtilities.InsertCar(id,name,price,image,cartype,condition,brand,discount,owner,location);
-		// 		MySqlDataStoreUtilities.InsertTime(id,start,end,location);
-				
-		// 	}
-		// 	else
-		// 		pw.print("<h4 style='color:red'><br>Please input valid item</h4>");
-		
-		
-		
-		// }
-		
-		//pw.print("<h4 style='color:red'><br>Your can cancell before "+cancel+"</h4>");
 		pw.print("</form></div></div></div>");		
-		// utility.printHtml("Footer.html");
-		
 	}
 
 }
